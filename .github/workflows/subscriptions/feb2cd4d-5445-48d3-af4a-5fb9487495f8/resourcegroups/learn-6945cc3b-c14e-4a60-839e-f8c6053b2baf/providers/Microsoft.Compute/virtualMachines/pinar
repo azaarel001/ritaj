@@ -1,0 +1,61 @@
+{
+    "name": "pinar",
+    "id": "/subscriptions/feb2cd4d-5445-48d3-af4a-5fb9487495f8/resourceGroups/learn-6945cc3b-c14e-4a60-839e-f8c6053b2baf/providers/Microsoft.Compute/virtualMachines/pinar",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "francecentral",
+    "properties": {
+        "vmId": "00bcb4b0-fdfe-4979-be25-505babc3c8a2",
+        "hardwareProfile": {
+            "vmSize": "Standard_D2s_v3"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "microsoftwindowsdesktop",
+                "offer": "windows-11",
+                "sku": "win11-21h2-pro",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "pinar_disk1_6850356ca3134cd19556c06e988a7f2a",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "Premium_LRS",
+                    "id": "/subscriptions/feb2cd4d-5445-48d3-af4a-5fb9487495f8/resourceGroups/learn-6945cc3b-c14e-4a60-839e-f8c6053b2baf/providers/Microsoft.Compute/disks/pinar_disk1_6850356ca3134cd19556c06e988a7f2a"
+                },
+                "diskSizeGB": 127
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "pinar",
+            "adminUsername": "pinarel",
+            "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true
+            },
+            "secrets": []
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/feb2cd4d-5445-48d3-af4a-5fb9487495f8/resourceGroups/learn-6945cc3b-c14e-4a60-839e-f8c6053b2baf/providers/Microsoft.Network/networkInterfaces/pinar757_z1",
+                    "properties": {
+                        "deleteOption": "Detach"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "licenseType": "Windows_Client",
+        "provisioningState": "Succeeded"
+    },
+    "zones": [
+        "1"
+    ]
+}
